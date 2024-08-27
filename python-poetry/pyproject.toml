@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "package"
+version = "0.1.0"
+description = ""
+authors = ["Name <email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+notebook = "^7.2.1"
+ipykernel = "^6.29.5"
+ipython = "^8.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+package = "package.main:main"
